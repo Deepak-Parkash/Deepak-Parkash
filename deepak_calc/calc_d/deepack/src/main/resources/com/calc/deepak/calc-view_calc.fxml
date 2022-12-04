@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.calc.deepak.CalcController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <children>
+        <TextField fx:id="textCalc"/>
+        <Button fx:id="btnCalc" mnemonicParsing="false" onAction="#calculate" text="Calculate"/>
+        <RadioButton fx:id="radRev" mnemonicParsing="false" onAction="#radRevAction" prefHeight="20" prefWidth="100"
+                     selected="true" text="Reverse Polish"/>
+        <RadioButton fx:id="radInf" mnemonicParsing="false" onAction="#radInfAction" prefHeight="20" prefWidth="100"
+                     text="Reverse Infix"/>
+        <Label fx:id="resultCalc" text="Result"/>
+    </children>
+</VBox>
